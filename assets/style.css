@@ -1,0 +1,33 @@
+body{
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  overflow: hidden;
+}
+.wrapper{
+  height: 100vh;
+}
+.wrapper h1{
+  text-align: center;
+  font-size: 5.5vh;
+  color:white;
+  text-align: center;
+}
+.index_navigation{
+  width: 50%;
+  height: 8vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35vh;
+  padding-top: 5vh;
+  border: solid 0.5vh white;
+
+}
+ .index_navigation a{
+  text-decoration: none;
+  height: 4.5vh;
+  font-size: 3.5vh;
+  margin-left: 24vh;
+  color: white;
+  background-color: transparent;
+  border: solid 0.35vh white;
+  padding: 0.55vh;
+}
