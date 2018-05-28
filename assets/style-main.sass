@@ -1,6 +1,9 @@
-$text_color: white
+$text_color: #0186b8
 $background_gradient: linear-gradient(to bottom, #434343 0%, black 100%)
-$break_small: 360px
+$break_small: 380px
+$border_color: #001a46
+$footer_background_color: transparent
+$background_color: #d7e1e9
 
 @keyframes rotate
   0%
@@ -14,17 +17,33 @@ $break_small: 360px
   100%
     opacity: 1
 
+@keyframes change_background_blue
+  0%
+    background-color: transparent
+  100%
+    background-color: #162c3d
+@keyframes change_background_orange
+  0%
+    background-color: transparent
+  100%
+    background-color: $text_color
+
+@keyframes burst_grid
+  0%
+    grid-gap: 0em
+  100%
+    grid-gap: 2em
+
 body
   box-sizing: border-box
-  background-image: $background_gradient
+  //background-image: $background_gradient
   font-family: Tajawal, sans-serif
   font-weight: 100
-  //background-color: black
-  //background-color: #41403f
+  background-color: $background_color
   .wrapper
-    height: 100vh
+
     h1
-      margin-top: 10vh
+      margin-top: 5vh
       text-align: center
       font-size: 5.5vh
       color: $text_color
@@ -34,9 +53,9 @@ body
       height: 8vh
       margin-left: auto
       margin-right: auto
-      margin-top: 35vh
-      padding-top: 5vh
-      border: solid 0.5vh $text_color
+      margin-top: 25vh
+      padding-top: 3.5vh
+      border: solid 0.5vh $border_color
 
 .french
   text-decoration: none
@@ -45,8 +64,8 @@ body
   margin-left: 24vh
   color: $text_color
   background-color: transparent
-  border: solid 0.35vh $text_color
-  padding: 0.55vh
+  border: solid 0.35vh $border_color
+  padding: 1vh
 .english
   text-decoration: none
   height: 4.5vh
@@ -54,18 +73,19 @@ body
   margin-left: 24vh
   color: $text_color
   background-color: transparent
-  border: solid 0.35vh $text_color
-  padding: 0.55vh
+  border: solid 0.35vh $border_color
+  padding: 1vh
 header
   color: $text_color
   padding-left: 1vw
-  width: 25%
+  width: 38%
   margin-top: -1.1vh
   padding-top: 0.5vh
   i
   font-size: 150%
+  color: $border_color
   i:hover
-    color: grey
+    color: $text_color
   ul
     list-style: none
     font-size: 100%
@@ -77,7 +97,7 @@ header
     text-decoration: none
     color: $text_color
   a:hover
-    color: grey
+    color: $border_color
 
 main
   color: $text_color
@@ -96,7 +116,7 @@ main
       grid-column: 3
     .container
       width: 100%
-      border: solid 0.3vh $text_color
+      //border: solid 0.3vh $border_color
       border-radius: 5%
       .container-title
         text-align: center
@@ -105,7 +125,52 @@ main
         margin-left: auto
         margin-right: auto
         text-align: justify
+  .animation_controls
+      ul
+        padding-top: 5vh
+        list-style: none
+        font-size: 150%
+        width: 12%
+        margin-left: auto
+        margin-right: auto
+        li
+          display: inline
+          margin-left: 0.5vw
   .portofolio-main
+
+    #deep-blue
+      background-color: #162c3d
+      color: $text_color
+      animation-name: change_background_blue
+      animation-duration: 3s
+      animation-name: transform_opacity
+      animation-duration: 3s
+    #medium-blue
+      background-color: $text_color
+      color: #162c3d
+      animation-name: change_background_orange
+      animation-duration: 6s
+      animation-name: transform_opacity
+      animation-duration: 6s
+      .case-1
+      .case-2
+      .case-3
+        margin-top: 10vh
+        p
+          color: green
+      .case-4
+        margin-top: -10vh
+      .case-5
+      .case-6
+        margin-top: -10vh
+      .case-7
+      .case-8
+        margin-top: -10vh
+      .case-9
+      .case-10
+
+      a
+        color: #162c3d
     width: 80%
     margin-left: auto
     margin-right: auto
@@ -114,28 +179,66 @@ main
     h2
       font-size: 200%
       text-align: center
+
     p
-      width: 90%
+      width: 80%
       font-size: 120%
     a
       text-decoration: none
       color: $text_color
     .portofolio-left
       grid-column: 1
+      p
+        margin-left: 3vw
+      #p-left-2
+        margin-top: 9.4vh
+      #p-left-3
+        margin-top: 14vh
+      #p-left-7
+        margin-top: 6vh
+      #p-left-8
+        margin-top: 9.2vh
+      #p-left-9
+        margin-top: 8.5vh
+      #p-left-10
+        margin-top: 14.8vh
+      #p-left-15
+        margin-top: 6.3vh
+
     .portofolio-right
       grid-column: 2
       padding-top: 11vh
-
+      p
+        margin-left: 3vw
+      #p-right-4
+        margin-top: 10vh
+      #p-right-5
+        margin-top: 7.6vh
+      #p-right-12
+        margin-top: 5.5vh
+      #p-right-13
+        margin-top: 5.5vh
+      #p-right-14
+        margin-top: 2vh
+  .contact-main
+    width: 50%
+    margin-left: auto
+    margin-right: auto
+    .contact_form
+      fieldset
+        border: solid 0.25vh $border_color
+        textarea
+          resize: none
 
 
 footer
-  background-color: #291737
+  background-color: $footer_background_color
   padding-top: 3vh
   width: 80%
   margin-left: auto
   margin-right: auto
   margin-top: 10vh
-  border-top: solid 0.3vh $text_color
+  border-top: solid 0.3vh $border_color
   display: grid
   grid-template-columns: repeat(3,1fr)
   grid-column-gap: 2em
@@ -145,20 +248,36 @@ footer
     text-decoration: none
     color: $text_color
   a:hover
-    color: grey
+    color: $border_color
+.footer_contact
+  width: 50%
+  margin-left: auto
+  margin-right: auto
+
+/* Responsive */
 @media screen and (max-width: $break_small)
 
   .wrapper
-    background-color: black
+    .index_navigation
+      width: 100%
+      border: none
+      .french
+        font-size: 3vh
+        margin-left: 3vw
+      .english
+        font-size: 3vh
+        margin-left: 2vw
+
   header
     width: 100%
-    background-color: #291737
+    background-color: #162c3d
+
     ul
       font-size: 80%
       li
         margin-left: 2vw
   main
-    background-color: black
+    background-color: transparent
     .main-grid
       width: 100%
       display: grid
@@ -174,11 +293,57 @@ footer
       .container
         width: 100%
         border: none
+    .animation_controls
+      display: none
+    .portofolio-main
+      width: 100%
+      h2
+        font-size: 180%
+      p
+        font-size: 70%
+      .portofolio-left
+        #p-left-2
+          margin-top: 20.2vh
+        #p-left-3
+          margin-top: 19vh
+        #p-left-7
+          margin-top: 10.5vh
+        #p-left-8
+          margin-top: 12vh
+        #p-left-9
+          margin-top: 16.6vh
+        #p-left-10
+          margin-top: 26vh
+        #p-left-15
+          margin-top: 8vh
+      .portofolio-right
+        #p-right-1
+          margin-top: 7.5vh
+        #p-right-4
+          margin-top: 14vh
+        #p-right-5
+          margin-top: 14vh
+        #p-right-6
+          margin-top: 7vh
+        #p-right-11
+          margin-top: 6vh
+        #p-right-12
+          margin-top: 5vh
+        #p-right-13
+          margin-top: 8vh
+        #p-right-14
+          margin-top: 7vh
+    .contact-main
+      width: 100%
+      textarea
+        width: 90%
   footer
     width: 100%
-    background-color: #291737
+    background-color: transparent
     padding-top: 0vh
     margin-top: 0vh
     border-top: none
     font-size: 100%
     ul
+  .footer_contact
+    width: 100%

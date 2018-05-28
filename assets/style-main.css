@@ -8,56 +8,70 @@
     opacity: 0; }
   100% {
     opacity: 1; } }
+@keyframes change_background_blue {
+  0% {
+    background-color: transparent; }
+  100% {
+    background-color: #162c3d; } }
+@keyframes change_background_orange {
+  0% {
+    background-color: transparent; }
+  100% {
+    background-color: #0186b8; } }
+@keyframes burst_grid {
+  0% {
+    grid-gap: 0em; }
+  100% {
+    grid-gap: 2em; } }
 body {
   box-sizing: border-box;
-  background-image: linear-gradient(to bottom, #434343 0%, black 100%);
   font-family: Tajawal, sans-serif;
-  font-weight: 100; }
-  body .wrapper {
-    height: 100vh; }
-    body .wrapper h1 {
-      margin-top: 10vh;
-      text-align: center;
-      font-size: 5.5vh;
-      color: white; }
-    body .wrapper .index_navigation {
-      width: 50%;
-      height: 8vh;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 35vh;
-      padding-top: 5vh;
-      border: solid 0.5vh white; }
+  font-weight: 100;
+  background-color: #d7e1e9; }
+  body .wrapper h1 {
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 5.5vh;
+    color: #0186b8; }
+  body .wrapper .index_navigation {
+    width: 50%;
+    height: 8vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25vh;
+    padding-top: 3.5vh;
+    border: solid 0.5vh #001a46; }
 
 .french {
   text-decoration: none;
   height: 4.5vh;
   font-size: 3.5vh;
   margin-left: 24vh;
-  color: white;
+  color: #0186b8;
   background-color: transparent;
-  border: solid 0.35vh white;
-  padding: 0.55vh; }
+  border: solid 0.35vh #001a46;
+  padding: 1vh; }
 
 .english {
   text-decoration: none;
   height: 4.5vh;
   font-size: 3.5vh;
   margin-left: 24vh;
-  color: white;
+  color: #0186b8;
   background-color: transparent;
-  border: solid 0.35vh white;
-  padding: 0.55vh; }
+  border: solid 0.35vh #001a46;
+  padding: 1vh; }
 
 header {
-  color: white;
+  color: #0186b8;
   padding-left: 1vw;
-  width: 25%;
+  width: 38%;
   margin-top: -1.1vh;
   padding-top: 0.5vh;
-  font-size: 150%; }
+  font-size: 150%;
+  color: #001a46; }
   header i:hover {
-    color: grey; }
+    color: #0186b8; }
   header ul {
     list-style: none;
     font-size: 100%;
@@ -67,12 +81,12 @@ header {
       margin-left: 0.75vw; }
   header a {
     text-decoration: none;
-    color: white; }
+    color: #0186b8; }
   header a:hover {
-    color: grey; }
+    color: #001a46; }
 
 main {
-  color: white; }
+  color: #0186b8; }
   main .main-grid {
     width: 80%;
     margin-left: auto;
@@ -88,7 +102,6 @@ main {
       grid-column: 3; }
     main .main-grid .container {
       width: 100%;
-      border: solid 0.3vh white;
       border-radius: 5%; }
       main .main-grid .container .container-title {
         text-align: center; }
@@ -97,35 +110,107 @@ main {
         margin-left: auto;
         margin-right: auto;
         text-align: justify; }
+  main .animation_controls ul {
+    padding-top: 5vh;
+    list-style: none;
+    font-size: 150%;
+    width: 12%;
+    margin-left: auto;
+    margin-right: auto; }
+    main .animation_controls ul li {
+      display: inline;
+      margin-left: 0.5vw; }
   main .portofolio-main {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
+    main .portofolio-main #deep-blue {
+      background-color: #162c3d;
+      color: #0186b8;
+      animation-name: change_background_blue;
+      animation-duration: 3s;
+      animation-name: transform_opacity;
+      animation-duration: 3s; }
+    main .portofolio-main #medium-blue {
+      background-color: #0186b8;
+      color: #162c3d;
+      animation-name: change_background_orange;
+      animation-duration: 6s;
+      animation-name: transform_opacity;
+      animation-duration: 6s; }
+      main .portofolio-main #medium-blue .case-3 {
+        margin-top: 10vh; }
+        main .portofolio-main #medium-blue .case-3 p {
+          color: green; }
+      main .portofolio-main #medium-blue .case-4 {
+        margin-top: -10vh; }
+      main .portofolio-main #medium-blue .case-6 {
+        margin-top: -10vh; }
+      main .portofolio-main #medium-blue .case-8 {
+        margin-top: -10vh; }
+      main .portofolio-main #medium-blue a {
+        color: #162c3d; }
     main .portofolio-main h2 {
       font-size: 200%;
       text-align: center; }
     main .portofolio-main p {
-      width: 90%;
+      width: 80%;
       font-size: 120%; }
     main .portofolio-main a {
       text-decoration: none;
-      color: white; }
+      color: #0186b8; }
     main .portofolio-main .portofolio-left {
       grid-column: 1; }
+      main .portofolio-main .portofolio-left p {
+        margin-left: 3vw; }
+      main .portofolio-main .portofolio-left #p-left-2 {
+        margin-top: 9.4vh; }
+      main .portofolio-main .portofolio-left #p-left-3 {
+        margin-top: 14vh; }
+      main .portofolio-main .portofolio-left #p-left-7 {
+        margin-top: 6vh; }
+      main .portofolio-main .portofolio-left #p-left-8 {
+        margin-top: 9.2vh; }
+      main .portofolio-main .portofolio-left #p-left-9 {
+        margin-top: 8.5vh; }
+      main .portofolio-main .portofolio-left #p-left-10 {
+        margin-top: 14.8vh; }
+      main .portofolio-main .portofolio-left #p-left-15 {
+        margin-top: 6.3vh; }
     main .portofolio-main .portofolio-right {
       grid-column: 2;
       padding-top: 11vh; }
+      main .portofolio-main .portofolio-right p {
+        margin-left: 3vw; }
+      main .portofolio-main .portofolio-right #p-right-4 {
+        margin-top: 10vh; }
+      main .portofolio-main .portofolio-right #p-right-5 {
+        margin-top: 7.6vh; }
+      main .portofolio-main .portofolio-right #p-right-12 {
+        margin-top: 5.5vh; }
+      main .portofolio-main .portofolio-right #p-right-13 {
+        margin-top: 5.5vh; }
+      main .portofolio-main .portofolio-right #p-right-14 {
+        margin-top: 2vh; }
+  main .contact-main {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; }
+    main .contact-main .contact_form fieldset {
+      border: solid 0.25vh #001a46; }
+      main .contact-main .contact_form fieldset textarea {
+        resize: none; }
 
 footer {
-  background-color: #291737;
+  background-color: transparent;
   padding-top: 3vh;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10vh;
-  border-top: solid 0.3vh white;
+  border-top: solid 0.3vh #001a46;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 2em;
@@ -133,24 +218,37 @@ footer {
   font-size: 120%; }
   footer a {
     text-decoration: none;
-    color: white; }
+    color: #0186b8; }
   footer a:hover {
-    color: grey; }
+    color: #001a46; }
 
-@media screen and (max-width: 360px) {
-  .wrapper {
-    background-color: black; }
+.footer_contact {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* Responsive */
+@media screen and (max-width: 380px) {
+  .wrapper .index_navigation {
+    width: 100%;
+    border: none; }
+    .wrapper .index_navigation .french {
+      font-size: 3vh;
+      margin-left: 3vw; }
+    .wrapper .index_navigation .english {
+      font-size: 3vh;
+      margin-left: 2vw; }
 
   header {
     width: 100%;
-    background-color: #291737; }
+    background-color: #162c3d; }
     header ul {
       font-size: 80%; }
       header ul li {
         margin-left: 2vw; }
 
   main {
-    background-color: black; }
+    background-color: transparent; }
     main .main-grid {
       width: 100%;
       display: grid;
@@ -166,13 +264,58 @@ footer {
       main .main-grid .container {
         width: 100%;
         border: none; }
+    main .animation_controls {
+      display: none; }
+    main .portofolio-main {
+      width: 100%; }
+      main .portofolio-main h2 {
+        font-size: 180%; }
+      main .portofolio-main p {
+        font-size: 70%; }
+      main .portofolio-main .portofolio-left #p-left-2 {
+        margin-top: 20.2vh; }
+      main .portofolio-main .portofolio-left #p-left-3 {
+        margin-top: 19vh; }
+      main .portofolio-main .portofolio-left #p-left-7 {
+        margin-top: 10.5vh; }
+      main .portofolio-main .portofolio-left #p-left-8 {
+        margin-top: 12vh; }
+      main .portofolio-main .portofolio-left #p-left-9 {
+        margin-top: 16.6vh; }
+      main .portofolio-main .portofolio-left #p-left-10 {
+        margin-top: 26vh; }
+      main .portofolio-main .portofolio-left #p-left-15 {
+        margin-top: 8vh; }
+      main .portofolio-main .portofolio-right #p-right-1 {
+        margin-top: 7.5vh; }
+      main .portofolio-main .portofolio-right #p-right-4 {
+        margin-top: 14vh; }
+      main .portofolio-main .portofolio-right #p-right-5 {
+        margin-top: 14vh; }
+      main .portofolio-main .portofolio-right #p-right-6 {
+        margin-top: 7vh; }
+      main .portofolio-main .portofolio-right #p-right-11 {
+        margin-top: 6vh; }
+      main .portofolio-main .portofolio-right #p-right-12 {
+        margin-top: 5vh; }
+      main .portofolio-main .portofolio-right #p-right-13 {
+        margin-top: 8vh; }
+      main .portofolio-main .portofolio-right #p-right-14 {
+        margin-top: 7vh; }
+    main .contact-main {
+      width: 100%; }
+      main .contact-main textarea {
+        width: 90%; }
 
   footer {
     width: 100%;
-    background-color: #291737;
+    background-color: transparent;
     padding-top: 0vh;
     margin-top: 0vh;
     border-top: none;
-    font-size: 100%; } }
+    font-size: 100%; }
+
+  .footer_contact {
+    width: 100%; } }
 
 /*# sourceMappingURL=style-main.css.map */
