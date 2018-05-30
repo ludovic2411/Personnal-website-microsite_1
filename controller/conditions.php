@@ -37,6 +37,17 @@ if (isset($_POST['contact_description']) && !empty($_POST['contact_description']
 if (isset($_POST['contact_description']) && !empty($_POST['contact_description'])&& isset($_POST['sujet']) && !empty($_POST['sujet'])
  && isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['genre']) && !empty($_POST['genre']) && isset($_POST['prenom'])&& !empty($_POST['prenom'])
 && isset($_POST['nom']) && !empty($_POST['nom'])) {
+
+  $to='ludovic.ceccotti@gmail.com';
+  $subject=$sujet;
+  $message=$description;
+  $headers=[
+    'From' => $email,
+    'Reply-To' => $email,
+    'X-Mailer' => 'PHP/' . phpversion(),
+  ];
+  mail($to,$subject,$message,$headers);
+
    session_start();
    $_SESSION['genre']=$genre;
    $_SESSION['nom']=$nom;

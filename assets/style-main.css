@@ -268,8 +268,9 @@ footer {
       main .main-grid .container {
         width: 100%;
         border: none; }
-    main .animation_controls {
-      display: none; }
+    main .animation_controls ul {
+      width: 42%;
+      font-size: 110%; }
     main .portofolio-main {
       width: 100%; }
       main .portofolio-main h2 {

@@ -50,6 +50,8 @@ function forward(){
   //document.querySelector('#right').style.animation="transform_opacity 3s";
   window.location.href ="portofolio-french.php";
 }
+
+
 /* ****** */
 
 

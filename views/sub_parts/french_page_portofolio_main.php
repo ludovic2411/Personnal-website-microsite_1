@@ -30,7 +30,7 @@
       <h2><i class="fab fa-css3-alt"></i> CSS</h2>
      <p id="p-right-3"><a href="https://github.com/ludovic2411/MVC"><i class="fab fa-css3-alt"></i> Le site de Didier Motte</a></p>
      <p id="p-right-4"><a href="https://github.com/ludovic2411/chat"><i class="fab fa-css3-alt"></i> Mini-chat</a></p>
-     <p id="p-right-5"><a href="https://github.com/ludovic2411/wordp-right-ess-FooDog/blob/master/theme-FooDogs/style.css"><i class="fab fa-css3-alt"></i> Un thème Wordpress</a></p>
+     <p id="p-right-5"><a href="https://github.com/ludovic2411/wordpress-FooDog/tree/master/theme-FooDogs"><i class="fab fa-css3-alt"></i> Un thème Wordpress</a></p>
       </section>
     </section>
     <section class="portofolio-left" id="medium-blue">
@@ -44,7 +44,7 @@
     </section>
     <section class="portofolio-right" id="deep-blue">
       <section class="case-6">
-      <p id="p-right-6">Rep-right-oduction du site d'un antiquaire en sivant l'architecture MVC et avec des sous-fichiers php</p>
+      <p id="p-right-6">Reproduction du site d'un antiquaire en sivant l'architecture MVC et avec des sous-fichiers php</p>
       <p id="p-right-7">Réalisation d'un Mini salon de chat avec des sessions d'utilisateurs au moyen de PHP et d'une base de données MySQL</p>
       <p id="p-right-8">Réalisation d'une todo-list avec uen version en Json et une avec une base de données MySQL (changez la branche du repo pour voir les deux versions du code)</p>
       <p id="p-right-9">Réalisation d'un formulaire de contact adapté aux personnes non-voyantes en PHP avec champs sanitizés.</p>
@@ -62,7 +62,7 @@
       <section class="case-8">
       <h2><i class="fab fa-js"></i> Javascript</h2>
       <p id="p-right-10"><a href="https://github.com/ludovic2411/javascript-drills/tree/master/cookieclicker"><i class="fab fa-js"></i> Cookie clicker</a></p>
-      <p id="p-right-11"><a href="https://github.com/ludovic2411/javascript-drills/tree/master/mastermind"><i class="fab fa-js"></i> Mastermind e Javascript</a></p>
+      <p id="p-right-11"><a href="https://github.com/ludovic2411/javascript-drills/tree/master/mastermind"><i class="fab fa-js"></i> Mastermind en Javascript</a></p>
       <p id="p-right-12"><a href="https://github.com/ludovic2411/javascript-drills/tree/master/paires"><i class="fab fa-js"></i> Un jeu des paires en Javascript</a></p>
       <p id="p-right-13"><a href="https://github.com/ludovic2411/javascript-drills/tree/master/exo-jquery"><i class="fab fa-js"></i> Série de drills sur JQuery</a></p>
     </section>
