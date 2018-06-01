@@ -50,7 +50,9 @@ function forward(){
   //document.querySelector('#right').style.animation="transform_opacity 3s";
   window.location.href ="portofolio-french.php";
 }
-
+ function responsive(){
+   let responsive_window=window.open("http://localhost:8888/microsite_1/views/french_page.php","height=568px", "width=320px");
+ }
 
 /* ****** */
 
@@ -58,5 +60,6 @@ function forward(){
 
 document.querySelector('.back').addEventListener("click",back);
 document.querySelector('.stop').addEventListener("click",stop);
+document.querySelector('.mobile').addEventListener("click",responsive);
 document.querySelector('.play').addEventListener("click",play);
 document.querySelector('.forward').addEventListener("click",forward);

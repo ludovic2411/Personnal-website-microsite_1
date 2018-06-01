@@ -20,7 +20,12 @@ function rebuild_grid(){
   document.querySelector('.portofolio-main').style.gridGap="0em";
 }
 
+function responsive_portofolio(){
+  let responsive_window=window.open("../views/portofolio-french.php","height=568px", "width=320px");
+}
+
 document.querySelector('.back-portofolio').addEventListener("click",back_portofolio);
 document.querySelector('.forward-portofolio').addEventListener("click",forward_portofolio);
+document.querySelector('.mobile-portofolio').addEventListener("click",responsive_portofolio);
 document.querySelector('.play-portofolio').addEventListener("click",burst_grid);
 document.querySelector('.stop-portofolio').addEventListener("click",rebuild_grid);

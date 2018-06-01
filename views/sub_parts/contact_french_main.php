@@ -1,6 +1,8 @@
 <main>
+  <h1>Contactez moi pour plus d'informations</h1>
+  <h3>Cliquez sur l'icône play pour afficher le contenu</h3>
+  <?php include 'controls-contact.php'; ?>
   <section class="contact-main">
-    <h1>Contactez moi pour plus d'informations</h1>
     <form class="contact_form" action="#" method="post">
       <fieldset>
         <legend>Vous pouvez me contacter en remplissant ce formulaire</legend>
@@ -31,5 +33,4 @@
       </fieldset>
     </form>
   </section>
-  <?php include 'controls-contact.php'; ?>
 </main>

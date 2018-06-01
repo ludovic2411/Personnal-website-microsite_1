@@ -41,12 +41,12 @@ if (isset($_POST['contact_description']) && !empty($_POST['contact_description']
   $to='ludovic.ceccotti@gmail.com';
   $subject=$sujet;
   $message=$description;
-  $headers=[
+  $headers = array(
     'From' => $email,
-    'Reply-To' => $email,
-    'X-Mailer' => 'PHP/' . phpversion(),
-  ];
-  mail($to,$subject,$message,$headers);
+    'Reply-To' => 'ludovic.ceccotti@gmail.com',
+    'X-Mailer' => 'PHP/' . phpversion()
+  );
+  mail($to,$subject,$message,implode("\r\n", $headers));
 
    session_start();
    $_SESSION['genre']=$genre;

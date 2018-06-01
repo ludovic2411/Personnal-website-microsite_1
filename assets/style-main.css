@@ -45,8 +45,8 @@ body {
 .french {
   text-decoration: none;
   height: 4.5vh;
+  margin-left: 25%;
   font-size: 3.5vh;
-  margin-left: 24vh;
   color: #0186b8;
   background-color: transparent;
   border: solid 0.35vh #001a46;
@@ -56,7 +56,7 @@ body {
   text-decoration: none;
   height: 4.5vh;
   font-size: 3.5vh;
-  margin-left: 24vh;
+  margin-left: 25%;
   color: #0186b8;
   background-color: transparent;
   border: solid 0.35vh #001a46;
@@ -87,6 +87,8 @@ header {
 
 main {
   color: #0186b8; }
+  main h3 {
+    text-align: center; }
   main .main-grid {
     width: 80%;
     margin-left: auto;
@@ -142,8 +144,6 @@ main {
       animation-duration: 6s; }
       main .portofolio-main #medium-blue .case-3 {
         margin-top: 10vh; }
-        main .portofolio-main #medium-blue .case-3 p {
-          color: green; }
       main .portofolio-main #medium-blue .case-4 {
         margin-top: -10vh; }
       main .portofolio-main #medium-blue .case-6 {
@@ -185,9 +185,9 @@ main {
       main .portofolio-main .portofolio-right p {
         margin-left: 3vw; }
       main .portofolio-main .portofolio-right #p-right-4 {
-        margin-top: 10vh; }
+        margin-top: 5vh; }
       main .portofolio-main .portofolio-right #p-right-5 {
-        margin-top: 7.6vh; }
+        margin-top: 6vh; }
       main .portofolio-main .portofolio-right #p-right-12 {
         margin-top: 5.5vh; }
       main .portofolio-main .portofolio-right #p-right-13 {
@@ -233,19 +233,21 @@ footer {
 
 /* Responsive */
 @media screen and (max-width: 380px) {
-  .wrapper .index_navigation {
+  .index_navigation {
     width: 100%;
     border: none; }
-    .wrapper .index_navigation .french {
+    .index_navigation .french {
       font-size: 3vh;
-      margin-left: 3vw; }
-    .wrapper .index_navigation .english {
+      margin-left: 25%;
+      border: none; }
+    .index_navigation .english {
       font-size: 3vh;
-      margin-left: 2vw; }
+      margin-left: 25%;
+      border: none; }
 
   header {
     width: 100%;
-    background-color: #162c3d; }
+    background-color: transparent; }
     header ul {
       font-size: 80%; }
       header ul li {
@@ -278,35 +280,35 @@ footer {
       main .portofolio-main p {
         font-size: 70%; }
       main .portofolio-main .portofolio-left #p-left-2 {
-        margin-top: 20.2vh; }
+        margin-top: 17.3vh; }
       main .portofolio-main .portofolio-left #p-left-3 {
-        margin-top: 19vh; }
+        margin-top: 16vh; }
       main .portofolio-main .portofolio-left #p-left-7 {
-        margin-top: 10.5vh; }
+        margin-top: 9.2vh; }
       main .portofolio-main .portofolio-left #p-left-8 {
-        margin-top: 12vh; }
+        margin-top: 9.5vh; }
       main .portofolio-main .portofolio-left #p-left-9 {
-        margin-top: 16.6vh; }
+        margin-top: 14.4vh; }
       main .portofolio-main .portofolio-left #p-left-10 {
-        margin-top: 26vh; }
+        margin-top: 22.6vh; }
       main .portofolio-main .portofolio-left #p-left-15 {
-        margin-top: 8vh; }
+        margin-top: 7vh; }
       main .portofolio-main .portofolio-right #p-right-1 {
-        margin-top: 7.5vh; }
+        margin-top: 4.6vh; }
       main .portofolio-main .portofolio-right #p-right-4 {
-        margin-top: 14vh; }
+        margin-top: 12vh; }
       main .portofolio-main .portofolio-right #p-right-5 {
-        margin-top: 14vh; }
+        margin-top: 11.6vh; }
       main .portofolio-main .portofolio-right #p-right-6 {
-        margin-top: 7vh; }
+        margin-top: 4vh; }
       main .portofolio-main .portofolio-right #p-right-11 {
-        margin-top: 6vh; }
+        margin-top: 4.5vh; }
       main .portofolio-main .portofolio-right #p-right-12 {
-        margin-top: 5vh; }
+        margin-top: 4.4vh; }
       main .portofolio-main .portofolio-right #p-right-13 {
-        margin-top: 8vh; }
-      main .portofolio-main .portofolio-right #p-right-14 {
         margin-top: 7vh; }
+      main .portofolio-main .portofolio-right #p-right-14 {
+        margin-top: 5vh; }
     main .contact-main {
       width: 100%; }
       main .contact-main textarea {
@@ -322,5 +324,76 @@ footer {
 
   .footer_contact {
     width: 100%; } }
+@media screen and (min-width: 381px) and (max-width: 800px) {
+  header {
+    width: 100%; }
+
+  main .animation_controls ul {
+    width: 50%; }
+  main .main-grid {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr; }
+    main .main-grid #left {
+      grid-column: 1; }
+    main .main-grid #center {
+      grid-column: 1; }
+    main .main-grid #right {
+      grid-column: 1; }
+  main .portofolio-main {
+    width: 100%; }
+    main .portofolio-main .portofolio-left #p-left-2 {
+      margin-top: 25.5vh; }
+    main .portofolio-main .portofolio-left #p-left-7 {
+      margin-top: 16vh; }
+    main .portofolio-main .portofolio-left #p-left-8 {
+      margin-top: 18.6vh; }
+    main .portofolio-main .portofolio-left #p-left-9 {
+      margin-top: 24.5vh; }
+    main .portofolio-main .portofolio-left #p-left-15 {
+      margin-top: 11.5vh; }
+    main .portofolio-main .portofolio-right #p-right-4 {
+      margin-top: 18.3vh; }
+    main .portofolio-main .portofolio-right #p-right-5 {
+      margin-top: 22vh; }
+    main .portofolio-main .portofolio-right #p-right-11 {
+      margin-top: 6.5vh; }
+    main .portofolio-main .portofolio-right #p-right-12 {
+      margin-top: 12vh; }
+    main .portofolio-main .portofolio-right #p-right-13 {
+      margin-top: 9vh; } }
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+  header {
+    width: 80%; }
+
+  .index_navigation .french {
+    margin-left: 20%; }
+  .index_navigation .english {
+    margin-right: -20%; }
+
+  .animation_controls ul {
+    display: inline-flex;
+    padding-left: 55vh;
+    color: #0186b8; }
+
+  .main-grid {
+    width: 100%; }
+
+  .portofolio-main .portofolio-left #p-left-2 {
+    margin-top: 12.5vh; }
+  .portofolio-main .portofolio-left #p-left-6 {
+    margin-top: 4.5vh; }
+  .portofolio-main .portofolio-left #p-left-7 {
+    margin-top: 8vh; }
+  .portofolio-main .portofolio-left #p-left-9 {
+    margin-top: 14.5vh; }
+  .portofolio-main .portofolio-left #p-left-15 {
+    margin-top: 9vh; }
+  .portofolio-main .portofolio-right #p-right-10 {
+    margin-top: 4.8vh; }
+  .portofolio-main .portofolio-right #p-right-11 {
+    margin-top: 1vh; } }
 
 /*# sourceMappingURL=style-main.css.map */

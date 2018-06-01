@@ -1,6 +1,8 @@
 $text_color: #0186b8
 $background_gradient: linear-gradient(to bottom, #434343 0%, black 100%)
 $break_small: 380px
+$break_medium: 400px
+$break_large: 1024px
 $border_color: #001a46
 $footer_background_color: transparent
 $background_color: #d7e1e9
@@ -41,13 +43,11 @@ body
   font-weight: 100
   background-color: $background_color
   .wrapper
-
     h1
       margin-top: 5vh
       text-align: center
       font-size: 5.5vh
       color: $text_color
-
     .index_navigation
       width: 50%
       height: 8vh
@@ -60,8 +60,8 @@ body
 .french
   text-decoration: none
   height: 4.5vh
+  margin-left: 25%
   font-size: 3.5vh
-  margin-left: 24vh
   color: $text_color
   background-color: transparent
   border: solid 0.35vh $border_color
@@ -70,7 +70,7 @@ body
   text-decoration: none
   height: 4.5vh
   font-size: 3.5vh
-  margin-left: 24vh
+  margin-left: 25%
   color: $text_color
   background-color: transparent
   border: solid 0.35vh $border_color
@@ -101,6 +101,8 @@ header
 
 main
   color: $text_color
+  h3
+    text-align: center
   .main-grid
     width: 80%
     margin-left: auto
@@ -156,8 +158,6 @@ main
       .case-2
       .case-3
         margin-top: 10vh
-        p
-          color: green
       .case-4
         margin-top: -10vh
       .case-5
@@ -211,9 +211,9 @@ main
       p
         margin-left: 3vw
       #p-right-4
-        margin-top: 10vh
+        margin-top: 5vh
       #p-right-5
-        margin-top: 7.6vh
+        margin-top: 6vh
       #p-right-12
         margin-top: 5.5vh
       #p-right-13
@@ -261,20 +261,20 @@ footer
 @media screen and (max-width: $break_small)
 
   .wrapper
-    .index_navigation
-      width: 100%
+  .index_navigation
+    width: 100%
+    border: none
+    .french
+      font-size: 3vh
+      margin-left: 25%
       border: none
-      .french
-        font-size: 3vh
-        margin-left: 3vw
-      .english
-        font-size: 3vh
-        margin-left: 2vw
-
+    .english
+      font-size: 3vh
+      margin-left: 25%
+      border: none
   header
     width: 100%
-    background-color: #162c3d
-
+    background-color: transparent
     ul
       font-size: 80%
       li
@@ -308,36 +308,36 @@ footer
         font-size: 70%
       .portofolio-left
         #p-left-2
-          margin-top: 20.2vh
+          margin-top: 17.3vh
         #p-left-3
-          margin-top: 19vh
+          margin-top: 16vh
         #p-left-7
-          margin-top: 10.5vh
+          margin-top: 9.2vh
         #p-left-8
-          margin-top: 12vh
+          margin-top: 9.5vh
         #p-left-9
-          margin-top: 16.6vh
+          margin-top: 14.4vh
         #p-left-10
-          margin-top: 26vh
+          margin-top: 22.6vh
         #p-left-15
-          margin-top: 8vh
+          margin-top: 7vh
       .portofolio-right
         #p-right-1
-          margin-top: 7.5vh
+          margin-top: 4.6vh
         #p-right-4
-          margin-top: 14vh
+          margin-top: 12vh
         #p-right-5
-          margin-top: 14vh
+          margin-top: 11.6vh
         #p-right-6
-          margin-top: 7vh
+          margin-top: 4vh
         #p-right-11
-          margin-top: 6vh
+          margin-top: 4.5vh
         #p-right-12
-          margin-top: 5vh
+          margin-top: 4.4vh
         #p-right-13
-          margin-top: 8vh
-        #p-right-14
           margin-top: 7vh
+        #p-right-14
+          margin-top: 5vh
     .contact-main
       width: 100%
       textarea
@@ -352,3 +352,82 @@ footer
     ul
   .footer_contact
     width: 100%
+
+@media screen and (min-width: 381px) and (max-width: 800px)
+  body
+    .wrapper
+  header
+    width: 100%
+  main
+    .animation_controls
+      ul
+        width: 50%
+    .main-grid
+      width: 100%
+      margin-left: auto
+      margin-right: auto
+      display: grid
+      grid-template-columns: 1fr
+      #left
+        grid-column: 1
+      #center
+        grid-column: 1
+      #right
+        grid-column: 1
+    .portofolio-main
+      width: 100%
+      .portofolio-left
+        #p-left-2
+          margin-top: 25.5vh
+        #p-left-7
+          margin-top: 16vh
+        #p-left-8
+          margin-top: 18.6vh
+        #p-left-9
+          margin-top: 24.5vh
+        #p-left-15
+          margin-top: 11.5vh
+      .portofolio-right
+        #p-right-4
+          margin-top: 18.3vh
+        #p-right-5
+          margin-top: 22vh
+        #p-right-11
+          margin-top: 6.5vh
+        #p-right-12
+          margin-top: 12vh
+        #p-right-13
+          margin-top: 9vh
+@media screen and (min-width:800px) and  (max-width: $break_large)
+    header
+      width: 80%
+    .index_navigation
+      .french
+        margin-left: 20%
+      .english
+          margin-right: -20%
+    .animation_controls
+      ul
+        display: inline-flex
+        padding-left: 55vh
+        color: $text_color
+    .main-grid
+      width: 100%
+      
+    .portofolio-main
+      .portofolio-left
+        #p-left-2
+          margin-top: 12.5vh
+        #p-left-6
+          margin-top: 4.5vh
+        #p-left-7
+          margin-top: 8vh
+        #p-left-9
+          margin-top: 14.5vh
+        #p-left-15
+          margin-top: 9vh
+      .portofolio-right
+        #p-right-10
+          margin-top: 4.8vh
+        #p-right-11
+          margin-top: 1vh

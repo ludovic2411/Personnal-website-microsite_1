@@ -1,14 +1,16 @@
 <main>
   <h1>Mes réalisations</h1>
+  <h3>Cliquez sur l'icône play pour éclater la grille</h3>
+  <?php include 'controls-portofolio.php'; ?>
   <section class="portofolio-main">
-    <section class="portofolio-left" id="medium-blue">
+    <section  class="portofolio-left" id="medium-blue">
       <section class="case-1">
       <h2><i class="fab fa-html5"></i> HTML</h2>
      <p id="p-left-1"><a href="https://ludovic2411.github.io/my-resume/index.html"><i class="fab fa-html5"></i> Mon curriculum vitae en anglais</a></p>
      <p id="p-left-2"><a href="https://ludovic2411.github.io/Mon-cv/Mon-cv.html"><i class="fab fa-html5"></i> Mon curriculum vitae en français</a></p>
     </section>
     </section>
-    <section class="portofolio-right" id="deep-blue">
+    <section  class="portofolio-right" id="deep-blue">
       <section class="case-2">
       <p id="p-right-1">Un curriculum vitae en HTML et CSS qui utilise les grilles CSS pour la mise en page. Il comporte
       quelques animations css et possède un design responsive.</p>
@@ -18,9 +20,9 @@
     </section>
     <section class="portofolio-left" id="deep-blue">
       <section class="case-3">
-       <p id="p-left-3">Reproduction du site d'un antiquaire. la fiche p-right-oduit est en grille CSS.
+       <p id="p-left-3">Reproduction du site d'un antiquaire. la fiche produit est en grille CSS.
         Design non responsive  <a href="https://didiermotte.be/">lien original</a></p>
-        <p id="p-left-4">Design d'un mini-chat inspiré d'un p-left-ateau de Monopoly. Réalisé à l'aide d'une grille CSS.
+        <p id="p-left-4">Design d'un mini-chat inspiré d'un plateau de Monopoly. Réalisé à l'aide d'une grille CSS.
         Design non responsive.</p>
         <p id="p-left-5">Réalisation d'un thème Wordpress avec un design responsive et grilles CSS.</p>
       </section>
@@ -82,5 +84,4 @@
    </section>
     </section>
   </section>
-  <?php include 'controls-portofolio.php'; ?>
 </main>

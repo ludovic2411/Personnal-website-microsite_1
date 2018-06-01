@@ -13,8 +13,11 @@ require "../controller/conditions.php";
   <head>
   <?php
      $html->charset('utf-8');
+     $html->description();
+     $html->author();
+     $html->keywords();
      $html->viewport();
-    $html->css('../assets/style-main.css')
+     $html->css('../assets/style-main.css')
     ?>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
@@ -26,7 +29,7 @@ require "../controller/conditions.php";
       <i class="fas fa-bars"></i>
       <ul>
         <li><a class="header_link" href="../index.php">Langues</a></li>
-        <li><a href="http://localhost:8888/microsite_1/views/french_page.php">A propos de moi</a></li>
+        <li><a href="./french_page.php">A propos de moi</a></li>
         <li><a class="header_link" href="./portofolio-french.php">Portofolio</a></li>
         <li><a class="header_link" href="./contact_french.php">Contact</a></li>
       </ul>

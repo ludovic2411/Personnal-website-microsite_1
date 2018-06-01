@@ -1,13 +1,15 @@
 <main>
   <h1>A propos de moi</h1>
+  <h3>Cliquez sur l'icône play pour afficher le contenu</h3>
+  <?php include 'controls.php'; ?>
   <section class="main-grid">
   <section class="container" id="left">
     <section class="container-title">
       <h2>Qui suis-je?</h2>
     </section>
     <section class="container-text">
-      <p>Bonjour, moi c'est Ludovic. J'ai 27 ans. Historien de formation, j'ai décidé me réorienter dans le secteur du webdevelopment
-        . J'adore voir la logique derrière un écran et dessiner une page web comme je le souhaite. A la recherche d'un stage, Underside
+      <p>Bonjour, moi c'est Ludovic. J'ai 27 ans. Historien de formation, j'ai décidé me réorienter dans le secteur du webdevelopment.
+        J'adore voir la logique derrière un écran et dessiner une page web comme je le souhaite. A la recherche d'un stage, Underside
         est l'entrerpise dans laquelle je souhaite le plus travailler en raison de son ancrage  dans la région de Charleroi
         et son sens de l'innovation. Puis moi aussi j'aimerais fêter Halloween dans un château! </p>
     </section>
@@ -42,5 +44,4 @@
     </section>
   </section>
 </section>
-<?php include 'controls.php'; ?>
 </main>

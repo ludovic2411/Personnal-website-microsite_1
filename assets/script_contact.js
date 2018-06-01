@@ -19,9 +19,14 @@ function play_contact(){
 function forward_contact(){
   window.location.href ="../views/french_page.php";
 }
+
+function responsive_contact(){
+  let responsive_window=window.open("../views/contact_french.php","height=568px", "width=320px");
+}
 /* ****** */
 
 document.querySelector('.back-contact').addEventListener("click",back_contact);
 document.querySelector('.stop-contact').addEventListener("click",stop_contact);
+document.querySelector('.mobile-contact').addEventListener("click",responsive_contact);
 document.querySelector('.play-contact').addEventListener("click",play_contact);
 document.querySelector('.forward-contact').addEventListener("click",forward_contact);
